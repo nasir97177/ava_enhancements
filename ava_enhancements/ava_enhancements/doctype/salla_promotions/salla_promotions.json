@@ -1,0 +1,56 @@
+{
+ "creation": "2022-02-17 14:51:41.620076",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "salla_promotion_code",
+  "promotion_description",
+  "column_break_2",
+  "salla_order_qty",
+  "salla_free_qty"
+ ],
+ "fields": [
+  {
+   "columns": 4,
+   "fieldname": "salla_promotion_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Salla Promotion Code",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "promotion_description",
+   "fieldtype": "Text",
+   "label": "Promotion Description"
+  },
+  {
+   "fieldname": "salla_order_qty",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Salla Order Qty",
+   "reqd": 1
+  },
+  {
+   "fieldname": "salla_free_qty",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Salla Free Qty",
+   "reqd": 1
+  }
+ ],
+ "istable": 1,
+ "modified": "2022-02-18 01:59:18.441640",
+ "modified_by": "Administrator",
+ "module": "Ava Enhancements",
+ "name": "Salla Promotions",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

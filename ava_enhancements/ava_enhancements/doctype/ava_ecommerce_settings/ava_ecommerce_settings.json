@@ -1,0 +1,201 @@
+{
+ "actions": [],
+ "creation": "2022-09-11 10:24:07.900208",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_1",
+  "woocommerce_server_url",
+  "column_break_3",
+  "enable_woocommerce_sync",
+  "enable_salla_sync",
+  "credentials_section",
+  "woocommerce_user",
+  "woocommerce_password",
+  "api_key_google_maps",
+  "column_break_8",
+  "api_consumer_key",
+  "api_consumer_secret",
+  "api_access_token_salla",
+  "defaults_section",
+  "industry_type",
+  "country",
+  "column_break_17",
+  "default_customer_group",
+  "communication_section",
+  "send_error_log_email",
+  "ecommerce_error_log_reviewer_role",
+  "column_break_22",
+  "send_out_of_fence_order_email",
+  "out_of_fence_order_reviewer_role",
+  "syncing_missing_orders_section"
+ ],
+ "fields": [
+  {
+   "fieldname": "woocommerce_server_url",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Woocommerce Server URL"
+  },
+  {
+   "fieldname": "api_consumer_key",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "API consumer key"
+  },
+  {
+   "fieldname": "api_consumer_secret",
+   "fieldtype": "Password",
+   "in_list_view": 1,
+   "label": "API consumer secret"
+  },
+  {
+   "fieldname": "defaults_section",
+   "fieldtype": "Section Break",
+   "label": "Defaults"
+  },
+  {
+   "fieldname": "default_customer_group",
+   "fieldtype": "Link",
+   "label": "Default Customer Group",
+   "options": "Customer Group",
+   "reqd": 1
+  },
+  {
+   "fieldname": "syncing_missing_orders_section",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "Syncing Missing Orders"
+  },
+  {
+   "fieldname": "woocommerce_user",
+   "fieldtype": "Data",
+   "label": "Woocommerce User"
+  },
+  {
+   "fieldname": "woocommerce_password",
+   "fieldtype": "Password",
+   "label": "Woocommerce Password"
+  },
+  {
+   "fieldname": "section_break_1",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "credentials_section",
+   "fieldtype": "Section Break",
+   "label": "Credentials"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_17",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "industry_type",
+   "fieldtype": "Link",
+   "label": "Industry Type",
+   "options": "Industry Type",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "enable_salla_sync",
+   "fieldtype": "Check",
+   "label": "Enable Salla Sync"
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Link",
+   "label": "Country",
+   "options": "Country",
+   "reqd": 1
+  },
+  {
+   "depends_on": "eval: doc.enable_salla_sync",
+   "fieldname": "api_access_token_salla",
+   "fieldtype": "Password",
+   "label": "API Access Token Salla",
+   "mandatory_depends_on": "eval: doc.enable_salla_sync"
+  },
+  {
+   "fieldname": "api_key_google_maps",
+   "fieldtype": "Password",
+   "label": "API key Google Maps",
+   "reqd": 1
+  },
+  {
+   "fieldname": "communication_section",
+   "fieldtype": "Section Break",
+   "label": "Communication"
+  },
+  {
+   "default": "0",
+   "fieldname": "send_error_log_email",
+   "fieldtype": "Check",
+   "label": "Send Error Log Email"
+  },
+  {
+   "fieldname": "column_break_22",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "send_out_of_fence_order_email",
+   "fieldtype": "Check",
+   "label": "Send Out of Fence Order Email"
+  },
+  {
+   "depends_on": "eval: doc.send_error_log_email",
+   "fieldname": "ecommerce_error_log_reviewer_role",
+   "fieldtype": "Link",
+   "label": "Ecommerce Error Log Reviewer Role",
+   "mandatory_depends_on": "eval: doc.send_error_log_email",
+   "options": "Role"
+  },
+  {
+   "depends_on": "eval: doc.send_out_of_fence_order_email",
+   "fieldname": "out_of_fence_order_reviewer_role",
+   "fieldtype": "Link",
+   "label": "Out of Fence Order Reviewer Role",
+   "mandatory_depends_on": "eval: doc.send_out_of_fence_order_email",
+   "options": "Role"
+  },
+  {
+   "default": "0",
+   "fieldname": "enable_woocommerce_sync",
+   "fieldtype": "Check",
+   "label": "Enable Woocommerce Sync"
+  }
+ ],
+ "issingle": 1,
+ "links": [],
+ "modified": "2022-10-10 10:34:21.441060",
+ "modified_by": "Administrator",
+ "module": "Ava Enhancements",
+ "name": "Ava Ecommerce Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

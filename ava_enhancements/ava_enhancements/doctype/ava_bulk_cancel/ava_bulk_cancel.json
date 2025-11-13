@@ -1,0 +1,67 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "creation": "2022-08-20 15:12:04.246135",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "doctype_name",
+  "cancel_all",
+  "to_cancel_entries",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "doctype_name",
+   "fieldtype": "Link",
+   "label": "DocType Name",
+   "options": "DocType"
+  },
+  {
+   "fieldname": "to_cancel_entries",
+   "fieldtype": "Table",
+   "label": "To Cancel Entries",
+   "options": "Ava To Cancel Entries"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Ava Bulk Cancel",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "cancel_all",
+   "fieldtype": "Button",
+   "label": "Cancel All"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2022-08-20 16:26:13.514057",
+ "modified_by": "Administrator",
+ "module": "Ava Enhancements",
+ "name": "Ava Bulk Cancel",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

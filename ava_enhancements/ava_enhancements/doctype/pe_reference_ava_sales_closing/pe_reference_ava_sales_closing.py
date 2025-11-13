@@ -1,0 +1,8 @@
+# Copyright (c) 2022, Furqan Asghar and contributors
+# For license information, please see license.txt
+
+# import frappe
+from frappe.model.document import Document
+
+class PEReferenceAvaSalesClosing(Document):
+	pass

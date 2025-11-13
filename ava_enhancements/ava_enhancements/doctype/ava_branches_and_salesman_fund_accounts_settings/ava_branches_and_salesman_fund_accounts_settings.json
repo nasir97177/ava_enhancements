@@ -1,0 +1,71 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:fund_account",
+ "creation": "2022-10-02 12:35:23.680278",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "fund_account_parent",
+  "cash_accounts",
+  "column_break_3",
+  "fund_account"
+ ],
+ "fields": [
+  {
+   "depends_on": "eval: doc.fund_account_parent",
+   "fieldname": "fund_account",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Fund Account",
+   "mandatory_depends_on": "eval: doc.fund_account_parent",
+   "options": "Account",
+   "unique": 1
+  },
+  {
+   "depends_on": "eval: doc.fund_account",
+   "fieldname": "cash_accounts",
+   "fieldtype": "Table MultiSelect",
+   "label": "Cash Accounts",
+   "mandatory_depends_on": "eval: doc.fund_account",
+   "options": "Branch Cash Accounts Child"
+  },
+  {
+   "fieldname": "fund_account_parent",
+   "fieldtype": "Link",
+   "label": "Fund Account Parent",
+   "options": "Account",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-10-02 16:26:04.327381",
+ "modified_by": "Administrator",
+ "module": "Ava Enhancements",
+ "name": "Ava Branches and Salesman Fund Accounts Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

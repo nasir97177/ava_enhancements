@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include ava_enhancements *.css
+recursive-include ava_enhancements *.csv
+recursive-include ava_enhancements *.html
+recursive-include ava_enhancements *.ico
+recursive-include ava_enhancements *.js
+recursive-include ava_enhancements *.json
+recursive-include ava_enhancements *.md
+recursive-include ava_enhancements *.png
+recursive-include ava_enhancements *.py
+recursive-include ava_enhancements *.svg
+recursive-include ava_enhancements *.txt
+recursive-exclude ava_enhancements *.pyc

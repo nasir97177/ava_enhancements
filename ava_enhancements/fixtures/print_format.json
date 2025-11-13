@@ -1,0 +1,29 @@
+[
+ {
+  "absolute_value": 0,
+  "align_labels_right": 1,
+  "css": null,
+  "custom_format": 0,
+  "default_print_language": "en",
+  "disabled": 0,
+  "doc_type": "Ava Cash Collection",
+  "docstatus": 0,
+  "doctype": "Print Format",
+  "font": "Default",
+  "format_data": "[{\"fieldname\": \"print_heading_template\", \"fieldtype\": \"Custom HTML\", \"options\": \"<div class=\\\"print-heading\\\">\\t\\t\\t\\t<h2><div>Ava Cash Collection</div><br><small class=\\\"sub-heading\\\">{{ doc.name }}</small>\\t\\t\\t\\t</h2></div>\"}, {\"fieldtype\": \"Section Break\", \"label\": \"\"}, {\"fieldtype\": \"Column Break\"}, {\"fieldname\": \"date\", \"print_hide\": 0, \"label\": \"Date\"}, {\"fieldname\": \"fetch_invoices_payment\", \"print_hide\": 0, \"label\": \"Fetch Invoices/Payments\"}, {\"fieldtype\": \"Column Break\"}, {\"fieldname\": \"pos_profile\", \"print_hide\": 0, \"label\": \"POS Profile\"}, {\"fieldtype\": \"Section Break\", \"label\": \"\"}, {\"fieldtype\": \"Column Break\"}, {\"fieldname\": \"sales_invoice_reference\", \"print_hide\": 0, \"label\": \"Sales Invoice Reference\", \"visible_columns\": [{\"fieldname\": \"sales_invoice\", \"print_width\": \"\", \"print_hide\": 0}, {\"fieldname\": \"paid_amount\", \"print_width\": \"\", \"print_hide\": 0}]}, {\"fieldname\": \"payment_entry_reference\", \"print_hide\": 0, \"label\": \"Payment Entry Reference\", \"visible_columns\": [{\"fieldname\": \"payment_entry\", \"print_width\": \"\", \"print_hide\": 0}, {\"fieldname\": \"paid_amount\", \"print_width\": \"\", \"print_hide\": 0}]}, {\"fieldname\": \"mode_of_payment\", \"print_hide\": 0, \"label\": \"Mode of payment\", \"visible_columns\": [{\"fieldname\": \"mode_of_payment\", \"print_width\": \"\", \"print_hide\": 0}, {\"fieldname\": \"amount\", \"print_width\": \"\", \"print_hide\": 0}]}, {\"fieldtype\": \"Section Break\", \"label\": \"\"}, {\"fieldtype\": \"Column Break\"}, {\"fieldname\": \"total_sales_invoice_amount\", \"print_hide\": 0, \"label\": \"Total Sales Invoice Amount\"}, {\"fieldname\": \"total_payment_entry_amount\", \"print_hide\": 0, \"label\": \"Total Payment Entry Amount\"}, {\"fieldtype\": \"Column Break\"}, {\"fieldname\": \"total_received_amount\", \"print_hide\": 0, \"label\": \"Total Received Amount\"}, {\"fieldtype\": \"Section Break\", \"label\": \"\"}, {\"fieldtype\": \"Column Break\"}, {\"fieldname\": \"_custom_html\", \"print_hide\": 0, \"label\": \"Custom HTML\", \"fieldtype\": \"HTML\", \"options\": \"{%- if doc.docstatus == 1 -%}\\n<div class='row'>\\n    <div class=\\\"col-xs-6 column-break\\\">\\n        <br>\\n        <p>Accountant Signature</p>\\n        <br>\\n        <p>_________________</p>    \\n    </div>\\n    <div class=\\\"col-xs-6 column-break text-right\\\">\\n        <br>\\n        <p>Salesman Signature</p>\\n        <br>\\n        <p>_________________</p>\\n    </div>\\n</div>\\n{%- endif -%}\"}]",
+  "html": null,
+  "line_breaks": 0,
+  "modified": "2022-08-30 12:53:12.152238",
+  "module": "Ava Enhancements",
+  "name": "Ava Cash Collection",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "print_format_builder": 0,
+  "print_format_type": "Jinja",
+  "raw_commands": null,
+  "raw_printing": 0,
+  "show_section_headings": 1,
+  "standard": "No"
+ }
+]

@@ -1,0 +1,160 @@
+{
+ "actions": [],
+ "autoname": "SI-GLO-.{pos_profile}.-.#####",
+ "creation": "2023-10-02 00:12:56.450829",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "fetch_geidea_payment",
+  "column_break_4",
+  "pos_profile",
+  "section_break_6",
+  "sales_invoice_reference",
+  "payment_entry_reference",
+  "mode_of_payment",
+  "section_break_10",
+  "total_sales_invoice_amount",
+  "total_payment_entry_amount",
+  "column_break_13",
+  "total_received_amount",
+  "cost_center",
+  "cash_transfer_payment_entry",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "AVA Geidea Closing",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "pos_profile",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "POS Profile",
+   "options": "POS Profile",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "sales_invoice_reference",
+   "fieldtype": "Table",
+   "label": "Sales Invoice Reference",
+   "options": "SI Reference Ava Sales Closing"
+  },
+  {
+   "fieldname": "payment_entry_reference",
+   "fieldtype": "Table",
+   "label": "Payment Entry Reference",
+   "options": "PE Reference Ava Sales Closing"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "mode_of_payment",
+   "fieldtype": "Table",
+   "label": "Mode of payment",
+   "options": "Sales Invoice Payment Closing"
+  },
+  {
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "total_sales_invoice_amount",
+   "fieldtype": "Currency",
+   "label": "Total Sales Invoice Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_payment_entry_amount",
+   "fieldtype": "Currency",
+   "label": "Total Payment Entry Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_received_amount",
+   "fieldtype": "Currency",
+   "label": "Total Received Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cash_transfer_payment_entry",
+   "fieldtype": "Link",
+   "label": "Cash Transfer Payment Entry",
+   "options": "Ava Payment Entry",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "AVA Geidea Closing",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "cost_center",
+   "fieldtype": "Link",
+   "label": "Cost Center",
+   "options": "Cost Center"
+  },
+  {
+   "depends_on": "eval: ![1, 2].includes(doc.docstatus)",
+   "fieldname": "fetch_geidea_payment",
+   "fieldtype": "Button",
+   "label": "Fetch Geidea Payment"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-11-01 00:32:08.939082",
+ "modified_by": "Administrator",
+ "module": "Ava Enhancements",
+ "name": "AVA Geidea Closing",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

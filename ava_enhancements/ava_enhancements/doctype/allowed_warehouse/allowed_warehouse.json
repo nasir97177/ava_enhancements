@@ -1,0 +1,61 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-08-03 11:34:42.892192",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "warehouse",
+  "create_perm",
+  "column_break_4",
+  "perm_link",
+  "remove_perm"
+ ],
+ "fields": [
+  {
+   "columns": 3,
+   "fieldname": "warehouse",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 2,
+   "default": "0",
+   "depends_on": "eval: !doc.stock_entry_perm && !doc.__islocal",
+   "fieldname": "create_perm",
+   "fieldtype": "Button",
+   "label": "Create Perm"
+  },
+  {
+   "depends_on": "eval: doc.perm_link",
+   "fieldname": "remove_perm",
+   "fieldtype": "Button",
+   "label": "Remove Perm"
+  },
+  {
+   "fieldname": "perm_link",
+   "fieldtype": "Link",
+   "label": "Perm Link",
+   "options": "User Permission",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-08-14 09:16:42.239625",
+ "modified_by": "Administrator",
+ "module": "Ava Enhancements",
+ "name": "Allowed Warehouse",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
